@@ -1,0 +1,110 @@
+<%- include ('layouts/header.ejs') -%> 
+<!-- <div class="container">
+  <h1><%= title %></h1>
+  <p>Welcome to <%= title %></p>
+</div>-->
+
+<body>
+  <main>
+
+    <section class="intro-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="section-title">Nuestra Historia</h2>
+            <p class="section-description">
+              En nuestra tienda de deportes, nos apasiona ayudarte a encontrar los productos adecuados para tus actividades deportivas favoritas.
+            </p>
+            <p class="section-info">
+              Desde nuestro inicio en 2005, hemos crecido para convertirnos en una de las tiendas líderes en el mercado, ofreciendo una amplia gama de productos de calidad y un servicio excepcional a nuestros clientes.
+              <br>
+              Nos enorgullece ofrecer productos de marcas reconocidas y trabajar con proveedores confiables para garantizar que encuentres lo que necesitas para mantenerte activo y en forma.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img src="" width="100%" height="100%" alt="Tienda de deportes">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div class="container mt-5">
+      <h1>Bienvenido a nuestra tienda de deportes</h1>
+      <p>Encuentra los mejores productos para tus actividades deportivas favoritas.</p>
+      <a class="btn btn-primary" href="/productos">Ver productos</a>
+    </div>
+
+    <section class="container mt-5">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img class="card-img-top" src="" alt="Producto 1">
+            <div class="card-body">
+              <h5 class="card-title">Camiseta de fútbol</h5>
+              <p class="card-text">Descripción del producto y detalles adicionales. Precio: $29.99</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img class="card-img-top" src="" alt="Producto 2">
+            <div class="card-body">
+              <h5 class="card-title">Zapatillas deportivas</h5>
+              <p class="card-text">Descripción del producto y detalles adicionales. Precio: $79.99</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100">
+            <img class="card-img-top" src="" alt="Producto 3">
+            <div class="card-body">
+              <h5 class="card-title">Balón de baloncesto</h5>
+              <p class="card-text">Descripción del producto y detalles adicionales. Precio: $19.99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  
+</body>
+<%- include ('layouts/footer.ejs') -%> 
+
+<style>
+  .intro-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .section-title {
+    color: #000000;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .section-description {
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+
+  }
+
+  .section-info {
+    color: #000000;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: justify;
+  }
+
+</style>

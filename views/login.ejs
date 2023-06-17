@@ -1,0 +1,105 @@
+<%- include ('layouts/header.ejs') -%> 
+
+<body>
+    
+<div class="container" >
+    <hr>
+    <h1>Ingrese los datos para Iniciar Sesión</h1>
+    <hr> 
+      <div class="card">
+        <div class="caja">
+          <form action="/login" method="post">
+            <h4>Ingresa tu correo electronico</h4>
+            <div class="input-group">
+                <input type="text" id="user" required name="user" placeholder="email@example.com" class="form-control text-center">
+            </div>
+            <br>
+            <h4>Ingresa tu contraseña</h4>
+            <div class="input-group">
+                <input type="password" id="pass" required name="pass" class="form-control text-center">
+            </div>
+            <br>
+            <button type="submit" value="Login" class="btn btn-success">Iniciar Sesión</button>
+            <br>
+            <a href="/registro" class="button-link">Registrarte</a>
+          </form>
+        </div>
+      <p></p>
+      </div>
+  </div>
+</body> 
+
+<style>
+.container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.caja {
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #218838;
+}
+
+
+.button-link {
+display: block;
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-link:hover {
+  background-color: #0056b3;
+}
+</style>
+
+
+<%- include ('layouts/footer.ejs') -%> 
